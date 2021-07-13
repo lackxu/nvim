@@ -1,2 +1,2 @@
 # nvim
-My Neovim Configuration Base On Luanrvim
+My Neovim Configuration Base On Lunarvim
