@@ -162,6 +162,6 @@ require("lv-utils").define_augroups {
 
 -- Use a loop to conveniently both setup defined servers
 -- and map buffer local keybindings when the language server attaches
--- local servers = {"pyright", "tsserver"}
+--local servers = {"pyright", "tsserver"}
 -- for _, lsp in ipairs(servers) do nvim_lsp[lsp].setup {on_attach = on_attach} end
 return lsp_config

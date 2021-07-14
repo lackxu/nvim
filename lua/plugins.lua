@@ -144,12 +144,20 @@ return require("packer").startup(function(use)
   }
 
   use {
-    "romgrk/barbar.nvim",
-    config = function()
-      require "lv-barbar"
-    end,
-    event = "BufWinEnter",
+    'akinsho/nvim-bufferline.lua',
+    requires = 'kyazdani42/nvim-web-devicons',
+    config = function ()
+      require "lv-bufferline"
+    end
   }
+
+  -- use {
+  --   "romgrk/barbar.nvim",
+  --   config = function()
+  --     require "lv-barbar"
+  --   end,
+  --   event = "BufWinEnter",
+  -- }
 
   -- Builtins, these do not load by default
 

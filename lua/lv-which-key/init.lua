@@ -83,7 +83,7 @@ vim.api.nvim_set_keymap("n", "<leader>/", ":CommentToggle<CR>", { noremap = true
 vim.api.nvim_set_keymap("v", "<leader>/", ":CommentToggle<CR>", { noremap = true, silent = true })
 
 -- close buffer
-vim.api.nvim_set_keymap("n", "<leader>c", ":BufferClose<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<leader>c", ":bd<CR>", { noremap = true, silent = true })
 
 -- Save
 vim.api.nvim_set_keymap("n", "<leader>w", ":w!<CR>", { noremap = true, silent = true })
