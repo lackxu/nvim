@@ -159,6 +159,7 @@ local mappings = {
       "Workspace Diagnostics",
     },
     f = { "<cmd>Neoformat<cr>", "Format" },
+    v = { "<cmd>Vista!!<cr>", "Elements" },
     i = { "<cmd>LspInfo<cr>", "Info" },
     j = { "<cmd>lua vim.lsp.diagnostic.goto_next({popup_opts = {border = O.lsp.popup_border}})<cr>", "Next Diagnostic" },
     k = { "<cmd>lua vim.lsp.diagnostic.goto_prev({popup_opts = {border = O.lsp.popup_border}})<cr>", "Prev Diagnostic" },

@@ -313,6 +313,23 @@ return require("packer").startup(function(use)
     end,
   }
 
+  use {
+    "liuchengxu/vista.vim",
+    config = function ()
+      require("lv-vista").config()
+    end
+  }
+
+  use {
+    'phaazon/hop.nvim',
+    as = 'hop',
+    config = function()
+    -- you can configure Hop the way you like here; see :h hop-config
+    require'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
+    end
+  }
+
+
   -- Rust tools
   -- TODO: use lazy loading maybe?
   use {

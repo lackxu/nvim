@@ -1,0 +1,77 @@
+-- nnoremap <silent><C-w>o :Vista!!<cr>
+-- 
+-- " How each level is indented and what to prepend.
+-- " This could make the display more compact or more spacious.
+-- " e.g., more compact: ["▶ ", ""]
+-- " Note: this option only works the LSP executives, doesn't work for `:Vista ctags`.
+-- let g:vista_icon_indent = ["╰─▶ ", "├─▶ "]
+-- 
+-- " Executive used when opening vista sidebar without specifying it.
+-- " See all the avaliable executives via `:echo g:vista#executives`.
+-- let g:vista#renderer#enable_icon = 1
+-- let g:vista_default_executive = 'ctags'
+-- let g:vista_fzf_preview = ['right:50%']
+-- 
+-- " Set the executive for some filetypes explicitly. Use the explicit executive
+-- " instead of the default one for these filetypes when using `:Vista` without
+-- " specifying the executive.
+-- let g:vista_executive_for = {
+  -- \ 'cpp': 'vim_lsp',
+  -- \ 'php': 'vim_lsp',
+  -- \ }
+-- 
+-- " Declare the command including the executable and options used to generate ctags output
+-- " for some certain filetypes.The file path will be appened to your custom command.
+-- " For example:
+-- let g:vista_ctags_cmd = {
+      -- \ 'haskell': 'hasktags -x -o - -c',
+      -- \ }
+-- 
+-- " To enable fzf's preview window set g:vista_fzf_preview.
+-- " The elements of g:vista_fzf_preview will be passed as arguments to fzf#vim#with_preview()
+-- " For example:
+-- let g:vista_fzf_preview = ['right:50%']
+-- " Ensure you have installed some decent font to show these pretty symbols, then you can enable icon for the kind.
+-- let g:vista#renderer#enable_icon = 1
+-- 
+-- " The default icons can't be suitable for all the filetypes, you can extend it as you wish.
+-- let g:vista#renderer#icons = {
+      -- \   "k":         "\uf71b",
+      -- \   "a":         "\uf71b",
+      -- \   "b":         "\uf71b",
+      -- \   "s":         "\uf71b",
+      -- \   "n":         "\uf71b",
+      -- \   "o":         "\uf71b",
+      -- \   "f":         "\uf794",
+      -- \   "t":         "\uf318",
+      -- \   "function":  "\uf794",
+      -- \   "variables": "\uf031",
+      -- \   "variable":  "\uf031",
+      -- \   "autocommand groups":  "\ufb32",
+      -- \   "augroup":   "\ufb32",
+      -- \   "commands":  "\ufb32",
+      -- \   "command":   "\ufb32",
+      -- \   "maps":      "\uf279",
+      -- \   "map":       "\uf279",
+      -- \   "macros":    "\uf8a3",
+      -- \   "modules":   "\uf668",
+      -- \   "classes":   "\uf00b",
+      -- \   "members":   "\ufb4c",
+      -- \   "prototype": "\uf288",
+      -- \   "class":     "\uf121",
+      -- \   "c":         "\uf121",
+      -- \   "struct":    "\uf318",
+      -- \   "member":    "\uf02b",
+      -- \   "section":   "\ufb9d",
+      -- \   "key":       "\uf80a",
+      -- \   "chapter":   "\uf76a",
+      -- \   "subsection":"\uf76b",
+      -- \   "subsubsection":"\uf76c",
+      -- \   "subsubsubsection":"\uf76d",
+      -- \   "subsubsubsubsection":"\uf76e",
+      -- \   "alias": "\uf031",
+      -- \   "tables": "\uf318",
+      -- \   "structs":    "\uf318",
+      -- \   "methods":  "\uf031",
+      -- \   "record fields":"\uf02b",
+      -- \  }

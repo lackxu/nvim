@@ -158,7 +158,7 @@ gls.mid[1] = {
 
 gls.right[1] = {
   FileEncode = {
-    icon = "Λ",
+    icon = "❑",
     --icon = "🗚 :",
     provider = "FileEncode",
     condition = condition.hide_in_width,
