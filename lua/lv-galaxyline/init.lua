@@ -7,7 +7,8 @@ gl.short_line_list = {"NvimTree", "vista", "dbui", "packer"}
 gls.left[1] = {
   RainbowRed = {
     provider = function()
-      return "▊ "
+      return " "
+      -- return " ▊"
     end,
     highlight = {colors.blue, colors.bg}
   }
@@ -39,7 +40,8 @@ gls.left[2] = {
         t = colors.red
       }
       vim.api.nvim_command("hi GalaxyViMode guifg=" .. mode_color[vim.fn.mode()] .. " guibg=" .. colors.bg)
-      return "  "
+      -- return "  "
+      return "🌔  "
     end
   }
 }
@@ -59,7 +61,7 @@ gls.left[4] = {
 }
 gls.left[5] = {
   FileSize = {
-    icon = "∑ ",
+    icon = "𝓢 ",
     provider = "FileSize",
     condition = condition.buffer_not_empty,
     highlight = {colors.blue, colors.bg, "bold"}
@@ -151,15 +153,14 @@ gls.mid[1] = {
       end
       return true
     end,
-    icon = " LSP:",
+    icon = "  LSP:",
     highlight = {colors.yellow, colors.bg, "bold"}
   }
 }
 
 gls.right[1] = {
   FileEncode = {
-    icon = "❑",
-    --icon = "🗚 :",
+    icon = "ℱ",
     provider = "FileEncode",
     condition = condition.hide_in_width,
     separator = " ",
@@ -181,7 +182,7 @@ gls.right[2] = {
 
 gls.right[6] = {
   LineInfo = {
-    icon = "⌘ ",
+    icon = "ℒ  ",
     provider = "LineColumn",
     separator = " ",
     separator_highlight = {"NONE", colors.bg},
@@ -191,7 +192,7 @@ gls.right[6] = {
 
 gls.right[7] = {
   PerCent = {
-    icon = "§",
+    icon = "ℵ ",
     provider = "LinePercent",
     separator = " ",
     separator_highlight = {"NONE", colors.bg},
@@ -202,7 +203,8 @@ gls.right[7] = {
 gls.right[8] = {
   RainbowBlue = {
     provider = function()
-      return "  ▊"
+      -- return " ▊"
+      return " "
     end,
     highlight = {colors.blue, colors.bg}
   }
